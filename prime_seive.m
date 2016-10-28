@@ -6,6 +6,8 @@ function primes=prime_seive(target)
 % array by that, again flagging anything that divides by 3 with a remainder of 
 % 0. Actually, let's skip even numbers because we know they're not prime (except for 2).
 
+%verified output up to 7.751461e+05
+
 %sprintf('Starting prime seive with target = %d',target)
 
 % make an array of only odd numbers and 2 so we can skip half the numbers
@@ -20,7 +22,7 @@ i=1;
 limit=100;
 nlim=sqrt(x(nx))+1;
 while ((n<nlim) & (i<limit))
-	d=x/n;
+	d=x./n;
 	r=d-floor(d);
 	zero_ind=find(~r);
 	prime_flag(zero_ind)=0;
