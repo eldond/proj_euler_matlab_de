@@ -8,6 +8,7 @@ target=600851475143;
 
 %step one: find primes with a prime seive
 
-x=1:target;
+primes=prime_seive(target)
+
 
 x(end)
