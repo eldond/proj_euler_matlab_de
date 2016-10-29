@@ -8,7 +8,7 @@ function primes=prime_seive(target)
 
 %verified output up to 7.751461e+05
 
-%sprintf('Starting prime seive with target = %d',target)
+display(sprintf('Starting prime seive with target = %d',target))
 
 % make an array of only odd numbers and 2 so we can skip half the numbers
 t2=floor((target+1)/2.);
